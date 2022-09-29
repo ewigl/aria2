@@ -1,0 +1,8 @@
+aria2c.exe
+
+trackers_all.txt
+aria2.session
+aria2.log
+
+node_modules
+package-lock.json
