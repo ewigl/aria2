@@ -1,6 +1,5 @@
 const axios = require('axios')
 
-
 const trackerType = 'trackers_all.txt'
 const trackerUrl = `https://raw.githubusercontent.com/ngosang/trackerslist/master/${trackerType}`
 
@@ -8,7 +7,6 @@ const rpcURL = "http://localhost:6800/jsonrpc"
 const rpcToken = 992017
 
 function getTrackersFromGithub() {
-
     console.log("gettingTrackersFromGithub...");
     console.log("################################");
 
@@ -43,11 +41,11 @@ function getTrackersFromGithub() {
                     console.log("################################");
                 }
             })
+
         })
         .catch((e) => {
             console.log("ERROR:\n", e);
         })
 }
-
 
 getTrackersFromGithub()
