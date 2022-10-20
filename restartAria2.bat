@@ -2,6 +2,9 @@
 
 SET PROCESS_NAME=aria2c.exe
 
+echo Are U sure to restart aria2 ?
+pause
+
 @REM taskkill /F /T /im %PROCESS_NAME%
 taskkill /F /im %PROCESS_NAME%
 
