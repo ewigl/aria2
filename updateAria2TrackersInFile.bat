@@ -14,11 +14,11 @@ set TRACKER_FILE=trackers_all.txt
 
 @REM Trackers下载链接
 @REM Github链接
-set DOWNLOAD_LINK=https://raw.githubusercontent.com/ngosang/trackerslist/master/%TRACKER_FILE%
-@REM Mirror1
+@REM set DOWNLOAD_LINK=https://raw.githubusercontent.com/ngosang/trackerslist/master/%TRACKER_FILE%
+@REM Mirror1 GitHub io
 @REM set DOWNLOAD_LINK=https://ngosang.github.io/trackerslist/%TRACKER_FILE%
-@REM Mirror2
-@REM set DOWNLOAD_LINK=https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/%TRACKER_FILE%
+@REM Mirror2 JsDeliver
+set DOWNLOAD_LINK=https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/%TRACKER_FILE%
 
 
 @REM 下载 trackerlist 到 temp 目录
@@ -35,9 +35,10 @@ echo Formatted.
 @REM 删除当前 aria2 配置 中的 trackerlist
 echo Updating...
 sed -i "/^bt-tracker=/d" %CONF_FILE%
-type %~dp0%TRACKER_FILE% >> %CONF_FILE%
+@REM 追加更新trackerlist
+type %~dp0\%TRACKER_FILE_FOLDER%\%TRACKER_FILE% >> %CONF_FILE%
 echo Updated.
 
 echo Done.
 
-pause
+@REM pause
