@@ -4,8 +4,8 @@
 
 - aria2: [https://github.com/aria2/aria2](https://github.com/aria2/aria2)
 
-- Dashboard( [AriaNG](https://github.com/mayswind/AriaNg) AllInOne ): Use Browsers.
+- Dashboard ([AriaNG](https://github.com/mayswind/AriaNg) AllInOne), Use Browsers.
 
-- vbs automatically updateBT Trackers.
+- automatically update BT Trackers when start.
 
 - VBS shortcut in `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`.
