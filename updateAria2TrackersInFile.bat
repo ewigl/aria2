@@ -20,10 +20,12 @@ set TRACKER_FILE=trackers_all.txt
 @REM Mirror2 JsDeliver
 set DOWNLOAD_LINK=https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/%TRACKER_FILE%
 
+@REM create temp trackerlist
+if not exist %~dp0\%TRACKER_FILE_FOLDER% mkdir %~dp0\%TRACKER_FILE_FOLDER%
 
 @REM down trackerlist to temp
 echo Downloading...
-aria2c --dir=%~dp0/%TRACKER_FILE_FOLDER% --allow-overwrite=true "%DOWNLOAD_LINK%"
+curl -L --output-dir %TRACKER_FILE_FOLDER% -o %TRACKER_FILE% %DOWNLOAD_LINK%
 echo Downloaded.
 
 @REM sed trackerlist format
@@ -38,6 +40,11 @@ sed -i "/^bt-tracker=/d" %CONF_FILE%
 @REM append trackerlist
 type %~dp0\%TRACKER_FILE_FOLDER%\%TRACKER_FILE% >> %CONF_FILE%
 echo Updated.
+
+@REM delete temp trackerlist
+echo Deleting...
+rm -rf %~dp0\%TRACKER_FILE_FOLDER%
+echo Deleted.
 
 echo Done.
 
