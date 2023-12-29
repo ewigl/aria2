@@ -8,4 +8,6 @@
 
 - auto update BT Trackers before start.
 
+- rpc-secret default: 998486
+
 - auto start: VBS shortcut in `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`.
