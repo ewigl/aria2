@@ -1,7 +1,7 @@
 @echo off
 
 @REM aria2.conf path
-set CONF_FILE=D:\Apps\aria2\aria2.conf
+set CONF_FILE_NAME=aria2.conf
 
 @REM Trackers download dir
 set TRACKER_FILE_FOLDER=temp
@@ -36,9 +36,9 @@ echo Formatted.
 
 @REM delete old trackerlist
 echo Updating...
-sed -i "/^bt-tracker=/d" %CONF_FILE%
+sed -i "/^bt-tracker=/d" %~dp0\%CONF_FILE_NAME%
 @REM append trackerlist
-type %~dp0\%TRACKER_FILE_FOLDER%\%TRACKER_FILE% >> %CONF_FILE%
+type %~dp0\%TRACKER_FILE_FOLDER%\%TRACKER_FILE% >> %~dp0\%CONF_FILE_NAME%
 echo Updated.
 
 @REM delete temp trackerlist
