@@ -1,10 +1,10 @@
 ## Aria2 Windows 本地运行配置
 
+- [基础设置](https://github.com/P3TERX/aria2.conf/blob/master/aria2.conf)
+
 ### 使用
 
 - [aria2c](https://github.com/aria2/aria2/releases)
-
-- [基础设置](https://github.com/P3TERX/aria2.conf/blob/master/aria2.conf)
 
 - [AriaNG AllInOne](https://github.com/mayswind/AriaNg/releases)
 
