@@ -1,7 +1,7 @@
 {
   "language": "zh_Hans",
   "theme": "light",
-  "title": "📉${downspeed:noprefix} - ${downloading:noprefix}+${waiting:noprefix} - Aria2",
+  "title": "📉${downspeed:noprefix} - ${downloading:noprefix}&${waiting:noprefix} - Aria2",
   "titleRefreshInterval": 5000,
   "browserNotification": false,
   "browserNotificationSound": true,
@@ -28,7 +28,10 @@
   "includePrefixWhenCopyingFromTaskDetails": true,
   "showPiecesInfoInTaskDetailPage": "le10240",
   "afterRetryingTask": "task-list-downloading",
+  "taskListIndependentDisplayOrder": false,
   "displayOrder": "default:asc",
-  "fileListDisplayOrder": "default:asc",
+  "waitingTaskListPageDisplayOrder": "default:asc",
+  "stoppedTaskListPageDisplayOrder": "default:asc",
+  "fileListDisplayOrder": "name:asc",
   "peerListDisplayOrder": "default:asc"
 }
