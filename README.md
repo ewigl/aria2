@@ -17,8 +17,8 @@
 └── D:/Apps/aria2/
     ├── aria2.conf
     ├── aria2.session
-    ├── aria2.exe
     ├── aria2.vbs
+    ├── aria2c.exe
     ├── restartAria2.bat
     └── updateAria2TrackersInFile.bat
 ```
