@@ -4,11 +4,15 @@
 
 ### 使用
 
-- 需要[aria2c](https://github.com/aria2/aria2/releases)
+- 需要 [aria2c](https://github.com/aria2/aria2/releases)
 
-- 需要[AriaNG](https://github.com/mayswind/AriaNg/releases)
+- 需要 [AriaNG](https://github.com/mayswind/AriaNg/releases) 等控制台
+
+- 需要新建 aria2.session 空文件
 
 - 开机自启: 创建 VBS 快捷方式并放到 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`
+
+- 涉及路径的配置: `dir`, `input-file`, `save-session`
 
 ### 目录结构
 
@@ -19,6 +23,6 @@
     ├── aria2.session
     ├── aria2.vbs
     ├── aria2c.exe
-    ├── restartAria2.bat
-    └── updateAria2TrackersInFile.bat
+    ├── restart.bat
+    └── updateTrackers.bat
 ```
