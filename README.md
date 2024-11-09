@@ -19,6 +19,5 @@
     ├── aria2.session
     ├── aria2.vbs
     ├── aria2c.exe
-    ├── restart.bat
-    └── updateTrackers.bat
+    └── restart.bat
 ```
