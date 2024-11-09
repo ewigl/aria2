@@ -4,7 +4,7 @@
 
 ### 使用
 
-- 需要新建 aria2.session 空文件
+- 需要新建 aria2.session 空文件。
 
 - 开机自启: 创建 VBS 快捷方式并放到 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`。或使用 Windows 任务计划程序。
 
