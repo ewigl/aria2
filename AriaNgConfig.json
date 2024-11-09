@@ -1,7 +1,7 @@
 {
   "language": "zh_Hans",
   "theme": "light",
-  "title": "📉${downspeed:noprefix}, 📈${upspeed:noprefix} - Aria2",
+  "title": "📉 ${downspeed:noprefix} / 📝 ${downloading:noprefix} + ${waiting:noprefix} - Aria2",
   "titleRefreshInterval": 5000,
   "browserNotification": false,
   "browserNotificationSound": true,
